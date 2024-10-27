@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        // Array of URLs to redirect to
+        const urls = [
+            'https://www.colombiarecruiter.com/',
+            'https://www.colombiarecruiter.com/hiring/mastering-global-compliance/',
+            'https://www.colombiarecruiter.com/hiring/hire-top-tech-talent-startup-vs-big-company/',
+            'https://www.colombiarecruiter.com/global-business/luxembourg-business-expansion/',
+            'https://www.colombiarecruiter.com/global-business/luxembourg-subsidiary/',
+            'https://www.colombiarecruiter.com/eor/eor-vs-global-entity/',
+            'https://www.colombiarecruiter.com/employer-of-record/',
+            'https://www.colombiarecruiter.com/what-is-globalization/',
+            'https://www.colombiarecruiter.com/contact-us/',
+            'https://www.colombiarecruiter.com/privacy-policy/',
+            'https://www.colombiarecruiter.com/terms-and-conditions/',
+            'https://www.colombiarecruiter.com/disclaimer/',
+            'https://www.colombiarecruiter.com/about-us/'
+        ];
 
+        // Function to randomly select a URL and redirect
+        function randomRedirect() {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.replace(urls[randomIndex]); // Direct redirection without warning
+        }
+
+        // Call the redirect function as soon as the page loads
+        window.onload = randomRedirect;
+    </script>
+</head>
+<body>
+</body>
+</html>
